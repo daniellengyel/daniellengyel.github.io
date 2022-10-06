@@ -140,6 +140,7 @@ section.about .about-img img {
 
   #Inspired{
     padding: 8px;
+    width: 125px;
   }
 
   section.about .about-img:before {
