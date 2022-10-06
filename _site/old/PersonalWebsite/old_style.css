@@ -1,0 +1,42 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 18px;
+}
+
+@media(max-width: 980px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+#Intro {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.Name {
+    font-size: 4rem;
+    grid-column: 2 / -1;
+    grid-row: 4 / 5;
+
+}
+
+#About\ me {
+    grid-column: 4 / -2;
+    grid-row: 6 / -1;
+    font-size: 1rem;
+}
+
+#Further\ Info {
+
+}
