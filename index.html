@@ -19,32 +19,93 @@ title: Home
     <link rel="stylesheet" media="screen" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
   </head>
 
   <body>
 
-  <section id="Intro">
+  <section id="Intro" class="Intro">
 
     <div id="Name" class="obstacle">
-      Daniel Lengyel
+      Hi! I am Daniel
     </div>
 
     <div id="boids-js"></div>
 
+  
+    <div id="social-links" class="obstacle">
+      <a href="#" target="_blank" class="ai ai-cv-square"></a>
+      <a href="https://uk.linkedin.com/in/daniel-lengyel" target="_blank" class="fa fa-linkedin"></a>
+      <a href="https://scholar.google.co.uk/citations?user=OL6l4kEAAAAJ&hl=en" target="_blank" class="ai ai-google-scholar-square"></a>
+    </div>
+
+    <div id="Inspired" class="obstacle">
+      Inspired by Reynolds' <a href="https://en.wikipedia.org/wiki/Boids" target="_blank">Boids</a>.
+    </div>
+
     <script src="./assets/js/boids.js"></script>
     <script>boidsJS()</script> 
-
   </section>
 
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis nibh, accumsan vitae augue non, blandit interdum elit. Nulla in interdum velit. Maecenas suscipit odio id diam viverra hendrerit. Mauris maximus egestas eros, id consectetur nisl efficitur et. Aenean pellentesque pulvinar nibh, vel iaculis nisl imperdiet at. Proin sodales sit amet est a convallis. Nullam tempor tortor at consequat dapibus. Praesent mi arcu, fringilla vel porttitor elementum, convallis non nibh. Nunc id mauris a justo volutpat molestie. Sed a velit eget nisl auctor suscipit. Nunc scelerisque vitae mauris sit amet fringilla. Donec est lacus, vehicula ut tempus a, sollicitudin non elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  <input type="button" onClick="document.getElementsByClassName('about')[0].scrollIntoView();" />
 
-    Suspendisse ac magna feugiat, tempus nunc id, ullamcorper diam. Nullam vulputate volutpat eros eget porttitor. Morbi imperdiet orci non interdum consectetur. Nulla at dolor eros. Suspendisse potenti. Pellentesque quis dapibus dui, vitae feugiat erat. Praesent urna ligula, cursus id varius quis, accumsan id diam. Ut enim nunc, gravida in nulla vel, venenatis ultrices massa. Fusce vitae nibh sit amet nibh porttitor blandit. Curabitur fringilla ornare dolor, eu sollicitudin sapien iaculis eu. Praesent ut varius dui. Suspendisse ac arcu in ex tempor pharetra. Sed lacinia tortor ac cursus elementum. Phasellus porta, ligula vel volutpat maximus, quam enim feugiat mauris, a dapibus felis lectus viverra enim. Donec fringilla congue feugiat. Sed dolor neque, tempus eget euismod et, tempor sit amet nunc.
-    
-    Donec mollis vulputate velit eget fringilla. Curabitur dui lorem, vehicula id sem at, interdum blandit libero. Praesent eget lacus consectetur, tristique massa et, consequat ligula. Nullam eget pulvinar neque, id cursus arcu. Maecenas dui velit, imperdiet non neque commodo, lobortis maximus felis. Quisque vel bibendum tellus. In dignissim sem eget pharetra placerat. Sed consequat malesuada nisi in commodo. Integer et gravida arcu. Nunc consectetur, urna sit amet varius rhoncus, orci ante pellentesque sem, at consectetur est nisi ac nisl. Phasellus in ipsum pellentesque, lobortis lacus sed, scelerisque quam. Nulla convallis turpis sed ornare interdum. Donec viverra erat at massa laoreet, a finibus quam porttitor. Sed feugiat cursus nisl rutrum pharetra. Suspendisse consequat, nunc vitae sodales bibendum, augue lorem rhoncus mauris, eget porta purus velit in neque. Suspendisse facilisis, nulla in interdum malesuada, sapien mauris fermentum sapien, nec tincidunt tellus est id augue.
-  </p>
-
+  <!--About Section Start-->
+  <section class="about" data-scroll-index="1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <!--About Image-->
+          <div class="about-img">
+            <img src="assets/images/whiteSands.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <!--About Content-->
+          <div class="about-content">
+            <div class="about-heading">
+              <h2>About Me</h2>
+            </div>
+            <p>
+              Hi, I am <b>Daniel Lengyel</b> and 
+              am currently a third year PhD student at Imperial College London 
+              in the Department of Computing, superivsed by Nicholas R. Jennings, 
+              Panos Parpas and Nikolas Kantas. 
+              I am interested in systems involving interaction. 
+              Topics I have worked on include derivative free optimization, 
+              distributed optimization and data sparsification. 
+            </p>
+            <p>
+            Prior to my PhD, I obtained my bachelor's degree in math and 
+            computer science at UC Berkeley. 
+            There I spent significant time in the RISELab working on 
+            distributed optimization and model predictive control 
+            of HVAC systems for commercial buildings accross California 
+            to reduce energy consumption. 
+            I also dedicated my time to 
+            interests in quantum computing and energy and resources. 
+            </p>
+            <!--About Social Icons-->
+            <!-- <div class="social-icons">
+                              <a href="#"><i class="fa fa-facebook"></i></a>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <a href="#"><i class="fa fa-dribbble"></i></a>
+                              <a href="#"><i class="fa fa-google-plus"></i></a>
+                              <a href="#"><i class="fa fa-pinterest"></i></a>
+                          </div> -->
+            <span class="about-button">
+              <a class="main-btn" href="files/Boyuan_Chen_Resume.pdf"
+                >Resume</a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--About Section End-->
+  
   
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

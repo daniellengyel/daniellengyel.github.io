@@ -1,3 +1,6 @@
+/* Author: Daniel Lengyel */
+
+
 /* For now we update both position and force at time step i with values from i - 1
 Later I would like to use a leapfrog procedue or something similar */
 
@@ -71,7 +74,7 @@ class Boid {
     }
 
     var _centering_func = function(d, disp_unit){
-      var c = 0.006
+      var c = 0.006;
       return {x: c * disp_unit.x, y: c * disp_unit.y}
     }
 
@@ -270,7 +273,7 @@ var initBoids = function(canvas, size, speed, color, opacity, N, obstacles){
     var x = Math.random() * canvas.width;
     var y = Math.random() * canvas.height;
     if(canCreate(x, y, obstacles)){
-      var curr_size = size * Math.max(Math.random(), 0.4);
+      var curr_size = Math.max(size * Math.random(), 0.75);
       boids.push(new Boid(x, y, curr_size, size, speed, color, opacity));
       i += 1
     }
@@ -305,11 +308,11 @@ var bJS = function(tag_id){
   // var boundaries = [new BoundingBox(0, 0, canvas.w, canvas.h, is_inwards=true)];
   this.bJS = {
     boids: {
-      size: 4,
+      size: 5,
       speed: 0.75,
       color: "white",
-      opacity: 1,
-      N: 200,
+      opacity: 0.8,
+      N: 250,
       array: []
     }, 
     obstacles: []
@@ -377,16 +380,16 @@ var bJS = function(tag_id){
     }
 
 
-    // // draw rectangle
-    for(var i = 0; i<bJS.obstacles.length; i++){
-      ctx.strokeStyle = "white";
-      ctx.lineWidth = 5;
-      ctx.beginPath();
-      ctx.rect(
-        bJS.obstacles[i].x, bJS.obstacles[i].y, 
-        bJS.obstacles[i].width, bJS.obstacles[i].height);
-      ctx.stroke();
-    }
+    // // // draw rectangle
+    // for(var i = 0; i<bJS.obstacles.length; i++){
+    //   ctx.strokeStyle = "white";
+    //   ctx.lineWidth = 5;
+    //   ctx.beginPath();
+    //   ctx.rect(
+    //     bJS.obstacles[i].x, bJS.obstacles[i].y, 
+    //     bJS.obstacles[i].width, bJS.obstacles[i].height);
+    //   ctx.stroke();
+    // }
 
     bJS.obstacles = [];
     bJS.obstacles.push(new BoundingBox(0, 0, canvas_el.width, canvas_el.height, true, 100, 0.1));
