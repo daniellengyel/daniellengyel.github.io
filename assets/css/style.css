@@ -24,10 +24,13 @@ body {
 #Intro{
  height: 90%;
  width: 100%;
+ /* Fall Colors */
+ /* background: rgb(161,3,13);
+ background: linear-gradient(180deg, rgba(161,3,13,1) 0%, rgba(205,103,39,1) 49%, rgba(199,187,27,1) 100%); */
+ 
+/* Nice Blue */
  background: rgb(0,11,29);
- background: linear-gradient(180deg, rgba(0,11,29,1) 0%, rgba(0,25,69,1) 31%, rgba(54,80,126,1) 100%);
- /* background: rgb(0,11,29);
- background: linear-gradient(180deg, rgba(0,11,29,1) 0%, rgba(0,25,69,1) 54%, rgba(54,80,126,1) 100%); */
+ background: linear-gradient(180deg, rgba(0,11,29,1) 0%, rgba(0,25,69,1) 54%, rgba(54,80,126,1) 100%);
  position: relative;
 }
 
